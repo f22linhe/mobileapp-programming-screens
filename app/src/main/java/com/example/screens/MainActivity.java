@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("name", "Lina");
+                intent.putExtra("number", 1);
                 startActivity(intent);
                 Log.d("==>","We clicked on My_Button!");
             }
