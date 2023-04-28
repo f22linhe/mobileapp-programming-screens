@@ -7,8 +7,11 @@
     tools:context=".SecondActivity">
 
   <TextView
+      android:id="@+id/textView"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:textSize="24sp"
       android:text="@string/this_is_the_second_activity"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -16,5 +19,30 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.5" />
+
+  <TextView
+      android:id="@+id/set_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:textSize="16sp"
+      android:text="@string/name"
+      app:layout_constraintBottom_toTopOf="@+id/set_number"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      app:layout_constraintVertical_bias="0.5" />
+
+  <TextView
+      android:id="@+id/set_number"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:textSize="16sp"
+      android:text="@string/number"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.501"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/set_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
